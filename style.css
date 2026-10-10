@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 30px 14px;
+  background: #e9eef4;
+  color: #18283a;
+  font-family: Arial, sans-serif;
+}
+.page {
+  max-width: 920px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 15px 40px #12304922;
+  overflow: hidden;
+}
+.top {
+  height: 24px;
+  width: 43%;
+  background: #0875cf;
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 38px 55px;
+}
+header img {
+  width: 155px;
+  height: 155px;
+  flex: 0 0 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 28%;
+  border: 8px solid #d9eafb;
+}
+h1 {
+  font-size: clamp(28px, 5vw, 48px);
+  margin: 0;
+  letter-spacing: 1px;
+}
+h2 {
+  color: #5c7690;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+i {
+  display: block;
+  width: 58px;
+  height: 3px;
+  background: #0875cf;
+  margin: 13px 0;
+}
+p {
+  color: #334353;
+  line-height: 1.65;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 20px;
+  padding: 29px 55px;
+  border-top: 1px solid #dce3e9;
+}
+aside {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #edf7ff;
+  color: #0875cf;
+  font-size: 23px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 23px;
+  margin: 1px 0 13px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  text-align: center;
+}
+.skills b {
+  width: 62px;
+  height: 62px;
+  margin: auto auto 8px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #0875cf;
+  color: #fff;
+  font-size: 22px;
+}
+.skills div:nth-child(1) b {
+  background: #e34f26;
+}
+.skills div:nth-child(2) b {
+  background: #1572b6;
+}
+.skills div:nth-child(3) b {
+  background: #f0c808;
+  color: #111;
+}
+.skills div:nth-child(4) b {
+  background: #e44c30;
+}
+.skills div:nth-child(5) b {
+  background: #151515;
+}
+.skills div:nth-child(6) b {
+  background: #e8f6ff;
+  color: #1474a9;
+  border: 2px solid #1474a9;
+}
+.skills small {
+  display: block;
+  line-height: 1.35;
+}
+.learning {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.learning span {
+  background: #eaf6ff;
+  padding: 13px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.bottom {
+  height: 24px;
+  width: 55%;
+  margin-left: auto;
+  background: #0875cf;
+  clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+}
+@media (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+  header {
+    padding: 30px 25px;
+    gap: 18px;
+  }
+  header img {
+    width: 105px;
+    height: 105px;
+    flex-basis: 105px;
+    border-width: 5px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  header p {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+  section {
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
+    padding: 24px 25px;
+  }
+  aside {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 8px;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    align-items: flex-start;
+  }
+  header img {
+    width: 82px;
+    height: 82px;
+    flex-basis: 82px;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
